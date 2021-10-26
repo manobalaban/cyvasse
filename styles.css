@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+
+button {
+    font-size: 24px;
+    background: #d18c46;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 0 6px 0 6px;
+    width: 180px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #e7ab6f;
+}
+
+button:active {
+    background: #fece9e;
+}
+
+#menuArea {
+    background: gray;
+    padding: 12px;
+    text-align: center;
+}
+
+.playerArea {
+    width: 300px;
+    position: absolute;
+}
+
+#whiteArea {
+    left: 0;
+    top: 68px;
+    padding: 12px;
+}
+
+#blackArea {
+    right: 0;
+    top: 68px;
+    padding: 12px;
+}
+
+#boardContainer {
+    width: 782px;
+    height: 880px;
+    position: relative;
+    left: calc(50% - 391px);
+    top: 12px;
+}
+
+.piece {
+    width: 50px;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+}
+
+.field {
+    width: 70px;
+    left: calc(50% - 35px);
+    top: calc(50% - 35px);
+}
+
+.hex .piece, .hex .field {
+    position: absolute;
+}
+
+.hexContainer {
+    position: absolute;
+    left: 0;
+}
+
+.hex {
+    float: left;
+}
+
+.hex.left {
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 23px solid gray;
+}
+
+.hex.middle {
+    width: 46px;
+    height: 80px;
+}
+
+.hex.middleHider {
+    width: 46px;
+    height: 80px;
+    background-color: gray;
+}
+
+.hex.right {
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 23px solid gray;
+}
+
+.hex.left.color1 {
+    border-right: 23px solid #d18c46;
+}
+
+.hex.left.color2 {
+    border-right: 23px solid #e7ab6f;
+}
+
+.hex.left.color3 {
+    border-right: 23px solid #fece9e;
+}
+
+.hex.middle.color1 {
+    background-color: #d18c46;
+}
+
+.hex.middle.color2 {
+    background-color: #e7ab6f;
+}
+
+.hex.middle.color3 {
+    background-color: #fece9e;
+}
+
+.hex.right.color1 {
+    border-left: 23px solid #d18c46;
+}
+
+.hex.right.color2 {
+    border-left: 23px solid #e7ab6f;
+}
+
+.hex.right.color3 {
+    border-left: 23px solid #fece9e;
+}
